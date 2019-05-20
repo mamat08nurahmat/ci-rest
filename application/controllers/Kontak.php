@@ -100,8 +100,8 @@ function index_post() {
                 'id'           => $this->post('id'),
                 'nama'          => $this->post('nama'),
                 'nomor'    => $this->post('nomor'),
-                'email'    => $this->post('nomor'),
-                'pesan'    => $this->post('nomor')
+                'email'    => $this->post('email'),
+                'pesan'    => $this->post('pesan')
             );
     $insert = $this->db->insert('telepon', $data);
     if ($insert) {
