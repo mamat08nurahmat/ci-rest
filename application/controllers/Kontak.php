@@ -118,7 +118,10 @@ function index_put() {
     $data = array(
                 'id'       => $this->put('id'),
                 'nama'          => $this->put('nama'),
-                'nomor'    => $this->put('nomor'));
+                'nomor'    => $this->put('nomor'),
+                'email'          => $this->put('email'),
+                'pesan'    => $this->put('pesan')
+            );
     $this->db->where('id', $id);
     $update = $this->db->update('telepon', $data);
     if ($update) {
